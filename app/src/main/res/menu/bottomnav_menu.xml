@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/beranda"
+        android:title="@string/beranda_mn"
+        android:icon="@drawable/beranda_icon"/>
+    <item
+        android:id="@+id/produkHukum"
+        android:title="@string/hukum_mn"
+        android:icon="@drawable/hukum_icon"/>
+    <item
+        android:id="@+id/klarifikasi"
+        android:title="@string/klarifikasi_mn"
+        android:icon="@drawable/klarifikasi_icon"/>
+
+    <item
+        android:id="@+id/media"
+        android:title="@string/media_mn"
+        android:icon="@drawable/media_icon"/>
+</menu>

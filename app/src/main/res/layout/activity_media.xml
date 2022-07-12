@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MediaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/custom_size_logo"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottomnav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemTextAppearanceInactive="@style/styleTextBottomNav"
+        app:itemTextAppearanceActive="@style/styleTextBottomNav"
+        app:itemIconTint="@drawable/selector_bottomnav"
+        app:itemRippleColor="@color/ripple_red_eperda"
+        app:itemTextColor="@drawable/selector_bottomnav"/>
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintTop_toBottomOf="@+id/d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title_galeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/galeri_e"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_semibold"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/galeri_card"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_200sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_galeri"
+                app:layout_constraintStart_toStartOf="@id/tv_title_galeri"
+                app:layout_constraintEnd_toEndOf="@id/tv_title_galeri"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/upperLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_3sdp"
+                        android:background="@color/navy"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/iv_play"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/play_icon"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_lihat_lainnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lengkap"
+                        app:layout_constraintTop_toBottomOf="@id/iv_play"
+                        app:layout_constraintStart_toStartOf="@id/iv_play"
+                        app:layout_constraintEnd_toEndOf="@id/iv_play"
+                        android:textColor="@color/red_eperda"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/lato_bold"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_title_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tutorial_eperda"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_semibold"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/galeri_card"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/video_card"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_200sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_video"
+                app:layout_constraintStart_toStartOf="@id/tv_title_video"
+                app:layout_constraintEnd_toEndOf="@id/tv_title_video"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/upperLine2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_3sdp"
+                        android:background="@color/navy"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/iv_play2"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/play_icon"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_lihat_lainnya2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lengkap"
+                        app:layout_constraintTop_toBottomOf="@id/iv_play2"
+                        app:layout_constraintStart_toStartOf="@id/iv_play2"
+                        app:layout_constraintEnd_toEndOf="@id/iv_play2"
+                        android:textColor="@color/red_eperda"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/lato_bold"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

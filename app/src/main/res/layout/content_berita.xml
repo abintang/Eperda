@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_350sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_berita"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dump_berita"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/tv_berita_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:maxLines="3"
+                app:layout_constraintTop_toBottomOf="@id/iv_berita"
+                android:text="@string/berita_title_dump"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:ellipsize="end"/>
+
+            <ImageView
+                android:id="@+id/iv_calendar"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/calendar_icon"
+                app:layout_constraintTop_toBottomOf="@id/tv_berita_title"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/tv_date_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/date_dump"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/lato_semibold"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@id/iv_calendar"
+                app:layout_constraintTop_toTopOf="@id/iv_calendar"
+                app:layout_constraintBottom_toBottomOf="@id/iv_calendar"/>
+
+            <ImageView
+                android:id="@+id/iv_person"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/person_icon"
+                app:layout_constraintTop_toBottomOf="@id/tv_berita_title"
+                app:layout_constraintStart_toEndOf="@id/tv_date_created"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/tv_berita_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato_medium"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/berita_desc_dump"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/iv_calendar"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+            <View
+                android:id="@+id/upperLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@color/navy"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/play_icon"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_lihat_lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lihat_berita"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/iv_play"
+                app:layout_constraintStart_toStartOf="@id/iv_play"
+                app:layout_constraintEnd_toEndOf="@id/iv_play"
+                android:textColor="@color/red_eperda"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/lato_bold"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

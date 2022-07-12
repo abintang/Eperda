@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Eperda</string>
+    <string name="perda">Perda</string>
+    <string name="perkada">Perkada</string>
+    <string name="peraturan">Peraturan DPRD</string>
+    <string name="tentang_eperda"><u>Tentang E-perda</u></string>
+    <string name="apa_eperda">Apa itu E-perda ?</string>
+    <string name="tujuan">Tujuan Pengembangan</string>
+    <string name="bagan">Bagan Alur Eperda</string>
+    <string name="berita"><u>Berita</u></string>
+    <string name="list_berita">List berita Direktorat Produk Hukum</string>
+    <string name="beranda_mn">Beranda</string>
+    <string name="hukum_mn">Produk Hukum</string>
+    <string name="klarifikasi_mn">Klarifikasi</string>
+    <string name="media_mn">Media</string>
+    <string name="lihat_berita">Lihat Berita Lainnya</string>
+    <string name="lihat_galeri">Lihat Galeri Lainnya</string>
+    <string name="video">Video Launching Aplikasi E-PERDA</string>
+    <string name="dokumentasi"><u>Dokumentasi Kegiatan</u></string>
+    <string name="kegiatan">Kegiatan Direktorat PHD Terbaru</string>
+    <string name="review"><u>Review</u></string>
+    <string name="testimoni">Testimoni Eperda</string>
+    <string name="dump_person">Drs. Makmur Marbun, M.Si</string>
+    <string name="placeholder_person2">Drs. Akmal Malik, M.Si</string>
+    <string name="placeholder_person3">Agus Minonto, S.H., M.Si</string>
+    <string name="placeholder_person4">Alma Wiranata</string>
+
+    <string name="dump_title">Direktur Produk Hukum Daerah</string>
+    <string name="placeholder_title2">Dirjen OTDA</string>
+    <string name="placeholder_title3">Biro Hukum Provinsi Banten</string>
+    <string name="placeholder_title4">Bagian Hukum Kota Bogor</string>
+    <string name="tab1">Produk Hukum Provinsi</string>
+    <string name="tab2">Produk Hukum Kab/Kota</string>
+    <string name="tab3">Hasil Fasilitasi Provinsi</string>
+    <string name="tab4">Hasil Fasilitasi Kab/Kota</string>
+    <string name="cari">Pencarian Dokumen</string>
+    <string name="perda_nm">Perda</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="tahun">Tahun</string>
+    <string name="judul">Judul Produk Hukum</string>
+    <string name="klarifikasi">KLARIFIKASI PERDA PERKADA</string>
+    <string name="klarifikasi_1">Klarifikasi adalah sebuah mekanisme untuk melakukan pengkajian dan penilaian terhadap suatu produk hukum yang telah diundangkan, baik Peraturan Daerah maupun Peraturan Kepala Daerah, untuk mengetahui kesesuaian produk hukum tersebut dengan peraturan perundang-undangan yang lebih tinggi, kepentingan umum, dan/atau azas kesusilaan.</string>
+    <string name="klarifikasi_2">Seperti diketahui bahwa di pada Pasal 127A ayat (1), ayat (2) dan ayat (3), disebutkan bahwa: (1) Gubernur wajib menyampaikan Perda Provinsi kepada Menteri melalui Direktur Jenderal Otonomi Daerah dan bupati/wali kota menyampaikan Perda Kabupaten/Kota kepada gubernur paling lama 7 (tujuh) Hari setelah diundangkan, (2) Perda Provinsi dan Kabupaten/Kota sebagaimana dimaksud pada ayat (1), dilakukan Klarifikasi atas: (a) usulan dari setiap orang, kelompok orang, pemerintah daerah, badan hukum dan/atau instansi lainnya; dan (b) inisiatif dari Direktorat Jenderal Otonomi Daerah melalui Direktorat Produk Hukum Daerah dan/atau Biro Hukum Provinsi atau nama lainnya, (3) Klarifikasi sebagaimana dimaksud pada ayat (2), dilakukan oleh Direktorat Jenderal Otonomi Daerah melalui Direktorat Produk Hukum Daerah untuk Perda Provinsi dan biro hukum provinsi atau nama lainnya untuk Perda Kabupaten/Kota.</string>
+    <string name="klarifikasi_3">Sedangkan pada Pasal 127B disebutkan bahwa: (1) Klarifikasi sebagaimana dimaksud dalam Pasal 127A ayat (2) dan ayat (3), dilakukan dalam jangka waktu paling lama 15 (lima belas) Hari terhitung sejak tanggal surat diterima, (2) Ketentuan sebagaimana dimaksud dalam Pasal 127A ayat (1), berlaku juga terhadap Perda Provinsi dan Perda Kabupaten/Kota yang dilakukan Evaluasi.</string>
+
+    <string name="form">Form Pengajuan Klarifikasi</string>
+    <string name="nama_pemohon">Nama Pemohon</string>
+    <string name="nomor_wa">Nomor WA Pemohon</string>
+    <string name="jenis_pemohon">Jenis Pemohon</string>
+    <string name="wilayah_perda">Wilayah Perda</string>
+    <string name="file_perda">File Perda/Perkada</string>
+    <string name="tahun_perda">Tahun Perda/Perkada</string>
+    <string name="kajian_perda">Kajian Perda/Perkada</string>
+    <string name="surat_permohonan">Surat Permohonan</string>
+    <string name="nomor_surat">Nomor Surat Permohonan</string>
+
+    <string name="galeri_e">Galeri Eperda</string>
+    <string name="lengkap">Selengkapnya</string>
+    <string name="tutorial_eperda">Tutorial Eperda</string>
+    <string name="kontak">Kontak Kami</string>
+
+    <string name="apa_eperda_desc">Aplikasi E-Perda merupakan aplikasi yang dikembangkan oleh Direktorat Produk Hukum Daerah, Ditjen Otda Kemendagri yang bertujuan untuk mempercepat proses fasilitasi dari Rancangan Peraturan Daerah. Melalui aplikasi E-Perda ini, diharapkan dapat lebih meningkatkan efektifitas dan efisiensi kerja, karena segala prosesnya berbasis digital.</string>
+    <string name="tujuan_desc">Aplikasi E-Perda dapat mempercepat proses kegiatan dalam hal fasilitasi dan koordinasi seluruh rancangan produk hukum daerah. “Sehingga pemerintah daerah tidak perlu membuat sistem aplikasi sejenis dan cukup menggunakan sistem E-Perda tersebut dalam menunjang kegiatan pemerintahan daerah.”</string>
+    <string name="bagan_desc">Gambaran mengenai alur fasilitasi rancangan produk hukum Provinsi dan Kabupaten/Kota melalui Eperda, serta mekanisme persetujuan pembahasan dan penandatanganan rancangan produk hukum melalui Eperda.</string>
+    <string name="berita_desc_dump">Selasa, 21 Juni 2022 Direktorat Produk Hukum Daerah menyelenggarakan Rapat Koordinasi Nasional Produk Hukum Daerah Tahun 2022 dengan tema Peningkatan Kualitas</string>
+    <string name="berita_title_dump">Makmur Marbun membuka Rapat Koordinasi Pusat dan Daerah dalam Rangka Penyelarasan Pelaksanaan Perda dan Perkada</string>
+    <string name="berita_title_placeholder2">Rapat Koordinasi Nasional Produk Hukum Daerah Tahun 2022</string>
+    <string name="berita_title_placeholder3">Pembahasan Penyelesaian Dana Kompensasi Ketuk Pintu Suku Sebyar di Kab. Teluk Bintuni di Kemenerian ESDM</string>
+    <string name="berita_desc_placeholder2">Senin, 6 Juni 2022 Direktorat PHD menyelenggarakan Rapat Koordinasi Pusat dan Daerah dalam Rangka Penyelarasan Pelaksanaan Perda dan Perkada Sesuai Hasil</string>
+    <string name="berita_desc_placeholder3">Rapat Pembahasan Penyelesaian Dana Kompensasi Ketuk Pintu Suku Sebyar di Kab. Teluk Bintuni Dalam Proyek Hulu Migas LNG Tangguh dihadiri oleh Direktur Produk Hukum</string>
+
+    <string name="date_dump">2022–06–21</string>
+    <string name="date_placeholder">2022–05–25</string>
+    <string name="testimoni_dump">e-Perda akan kita bangun dalam tiga milestone. Milestone pertama adalah kemudahan proses fasilitasi, milestone kedua terkait integrasi pusat dan daerah, milestone ketiga adalah e-Perda menjadi tools untuk DSS (Decission Support System).</string>
+    <string name="placeholder_testimoni2">Pemerintah daerah tidak perlu membuat sistem aplikasi sejenis tetapi cukup menggunakan sistem e-Perda dalam menunjang kegiatan pemerintahan daerah.</string>
+    <string name="placeholder_testimoni3">Provinsi Banten sangat apresiasi dengan diluncurkannya aplikasi e-Perda oleh Dirjen Otonomi Daerah dan kami siap melaksanakan ketentuan pelaksanaan koordinasi melalui e-Perda. </string>
+    <string name="placeholder_testimoni4">Untuk pertama kali setelah dioperasikan aplikasi ini hanya butuh waktu sekitar 15 menit untuk menginput satu produk hukum daerah dan selanjutnya diterima notifikasi.</string>
+
+    <string name="placeholder_title_perda">Peraturan Daerah Provinsi KALIMANTAN SELATAN Nomer 01 Tahun 2018</string>
+    <string name="placeholder_desc_perda">Pencabutan Peraturan Daerah Kabupaten Tapin Nomor 02 Tahun 2009 tentang Retribusi Izin Hotel, Penginapan atau Wisma dan Pondok Wisata</string>
+    <string name="placeholder_komponen_perda">Komponen Tema : RETRIBUSI DAERAH</string>
+    <string name="placeholder_ditetapkan_perda">Ditetapkan :</string>
+</resources>

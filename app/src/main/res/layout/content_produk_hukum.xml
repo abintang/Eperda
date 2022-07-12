@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_210sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_perda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/perda_nm"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/red_eperda"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_15sdp"/>
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/tv_title_perda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="@string/placeholder_title_perda"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_perda"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_tema_perda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/placeholder_komponen_perda"
+                android:fontFamily="@font/lato_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@id/tv_title_perda"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_perda"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/tv_desc_perda"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="@string/placeholder_desc_perda"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_medium"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_perda"/>
+
+            <TextView
+                android:id="@+id/tv_ditetapkan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_ditetapkan_perda"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_semibold"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc_perda"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/iv_calendar"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/calendar_icon"
+                app:layout_constraintTop_toTopOf="@id/tv_ditetapkan"
+                app:layout_constraintBottom_toBottomOf="@id/tv_ditetapkan"
+                app:layout_constraintStart_toEndOf="@id/tv_ditetapkan"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_dump"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_semibold"
+                app:layout_constraintTop_toTopOf="@id/tv_ditetapkan"
+                app:layout_constraintBottom_toBottomOf="@id/tv_ditetapkan"
+                app:layout_constraintStart_toEndOf="@id/iv_calendar"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+            <View
+                android:id="@+id/upperLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:background="@color/navy"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent"/>
+            
+            
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/red_eperda"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:contentPadding="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintTop_toTopOf="@id/tv_ditetapkan"
+                app:layout_constraintBottom_toBottomOf="@id/tv_ditetapkan">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:src="@drawable/download_icon"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

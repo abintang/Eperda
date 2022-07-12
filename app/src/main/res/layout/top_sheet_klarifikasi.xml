@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.KlarifikasiActivity">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="0dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="0dp">
+                    
+                    <ImageView
+                        android:id="@+id/iv_dismiss"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:src="@drawable/cancel_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/red_eperda"
+                        android:text="@string/form"/>
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                app:layout_constraintTop_toBottomOf="@id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama_pemohon"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/editTextNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nama"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                android:background="@color/white"
+                                android:hint="Masukan Nama Pemohon"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:maxLines="1"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColorHint="@color/gray"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_nomor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nomor_wa"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/editTextNama"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/editTextNomor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nomor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                android:background="@color/white"
+                                android:hint="Masukan Nomor Wa Pemohon"
+                                android:inputType="phone"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:maxLines="1"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColorHint="@color/gray"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_jenis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jenis_pemohon"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/editTextNomor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/dropdown_jenis_pemohon"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_jenis"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/menu2"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:boxBackgroundColor="@color/white"
+                                android:hint="Pilih Salah Satu"
+                                app:hintTextAppearance="@style/styleTextBottomNav">
+
+                                <AutoCompleteTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="none" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_wilayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wilayah_perda"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/dropdown_jenis_pemohon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/dropdown_wilayah"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_wilayah"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/menu3"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:boxBackgroundColor="@color/white"
+                                android:hint="Pilih Salah Satu"
+                                app:hintTextAppearance="@style/styleTextBottomNav">
+
+                                <AutoCompleteTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="none" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_file_perda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/file_perda"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/dropdown_wilayah"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/chooseFile_perda"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_file_perda"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="match_parent"
+                                app:cardBackgroundColor="@color/red_eperda"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/icon_download"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/download_icon"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:text="Choose File"
+                                        android:fontFamily="@font/lato_medium"
+                                        app:layout_constraintStart_toEndOf="@id/icon_download"
+                                        app:layout_constraintTop_toTopOf="@id/icon_download"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        app:layout_constraintBottom_toBottomOf="@id/icon_download"/>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <EditText
+                                android:id="@+id/filePath"
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                android:background="@color/white"
+                                android:hint="No File Selection"
+                                android:paddingStart="@dimen/_120sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:maxLines="1"
+                                android:inputType="textUri"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColorHint="@color/gray"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_tahun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tahun_perda"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/chooseFile_perda"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/editTahun"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_tahun"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                android:background="@color/white"
+                                android:hint="Masukan Tahun"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:maxLines="1"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColorHint="@color/gray"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_file_kajian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kajian_perda"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/editTahun"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/chooseFile_kajian"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_file_kajian"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="match_parent"
+                                app:cardBackgroundColor="@color/red_eperda"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/icon_download1"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/download_icon"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:text="Choose File"
+                                        android:fontFamily="@font/lato_medium"
+                                        app:layout_constraintStart_toEndOf="@id/icon_download1"
+                                        app:layout_constraintTop_toTopOf="@id/icon_download1"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        app:layout_constraintBottom_toBottomOf="@id/icon_download1"/>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <EditText
+                                android:id="@+id/filePath1"
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                android:background="@color/white"
+                                android:hint="No File Selection"
+                                android:paddingStart="@dimen/_120sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:maxLines="1"
+                                android:inputType="textUri"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColorHint="@color/gray"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_file_surat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/surat_permohonan"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/chooseFile_kajian"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/chooseFile_surat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_file_surat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="@dimen/_110sdp"
+                                android:layout_height="match_parent"
+                                app:cardBackgroundColor="@color/red_eperda"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/icon_download2"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/download_icon"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:text="Choose File"
+                                        android:fontFamily="@font/lato_medium"
+                                        app:layout_constraintStart_toEndOf="@id/icon_download2"
+                                        app:layout_constraintTop_toTopOf="@id/icon_download2"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        app:layout_constraintBottom_toBottomOf="@id/icon_download2"/>
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <EditText
+                                android:id="@+id/filePath2"
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                android:background="@color/white"
+                                android:hint="No File Selection"
+                                android:paddingStart="@dimen/_120sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:maxLines="1"
+                                android:inputType="textUri"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColorHint="@color/gray"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/tv_nomor_surat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nomor_surat"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/chooseFile_surat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/editTextNomorSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nomor_surat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="@dimen/_1sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:elevation="0dp"
+                                android:background="@color/white"
+                                android:hint="Masukan Nomor Surat"
+                                android:inputType="number"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:maxLines="1"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColorHint="@color/gray"
+                                android:layout_height="match_parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/button_lanjut"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:cardBackgroundColor="@color/red_eperda"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:foreground="@color/navy"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintTop_toBottomOf="@id/editTextNomorSurat">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Submit"
+                            android:fontFamily="@font/lato_semibold"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_235sdp"
+                        app:layout_constraintTop_toBottomOf="@id/chooseFile_kajian"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
